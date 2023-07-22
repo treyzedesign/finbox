@@ -6,7 +6,7 @@ const Footer = () => {
     <div style={{minHeight:"60vh"}} className='pt-16 text-white bg-gradient-to-tl from-black via-stone-900 to-black w-full'>
         <div className='px-6'>
         <hr/>
-            <div className='grid sm:grid-cols-4 grid-rows px-16 pb-8 pt-10 gap-10'>
+            <div className='grid grid-cols-2 md:grid-cols-4 grid-rows px-16 pb-8 pt-10 gap-10'>
                 <div>
                     <h3 className='text-xl font-semibold'>About Us</h3>
                     <ul type="none" className='text-gray-400'>
@@ -49,9 +49,9 @@ const Footer = () => {
                 </div>
             </div>
         <hr />
-        <div className='pt-4 text-center'>
+        <div className='pt-4 pb-3 text-center'>
             <span className='font-semibold text-lime-500'>finBox.</span>
-            <span><FaRegCopyright className='inline mx-3 text-gray-500 text-xs'/> </span>
+            <span><FaRegCopyright className='inline mx-1 text-gray-500 text-xs'/> </span>
             <span className='text-xs text-gray-500'>2023  Treyzedesigns</span>
         </div>
         </div>

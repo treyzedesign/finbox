@@ -1,0 +1,6 @@
+.page_bg{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.831),rgba(0, 0, 0, 0.708)),url("../assets/consumer.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}

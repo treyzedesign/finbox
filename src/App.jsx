@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Nav from './components/Nav'
-import Banner from './components/Banner'
-import Coins from './components/Coins'
 import axios from 'axios'
-import Footer from './components/Footer'
+import SharedLayout from './components/SharedLayout'
+import Home from './pages/Home'
+import Login from './pages/login'
 function App() {
-  const [coinCap, setCoinCap] = useState([])
   const fetchCoinsCap = async ()=>{
     await axios.get("http://localhost:3004/coin").then((feedback)=>{
       setCoinCap(feedback.data.data)
@@ -21,10 +19,12 @@ function App() {
   },[])
   return (
     <>
-      <Nav/>
-      <Banner/>
-      <Coins capdata={coinCap}/>
-      <Footer/>
+      <Routes>
+        <Route path='/user_auth_page' element={<Login/>}/>
+        <Route path='/' element={<SharedLayout/>}>
+          <Route index element={<Home/>}/>
+        </Route>
+      </Routes>
     </>
   )
 }

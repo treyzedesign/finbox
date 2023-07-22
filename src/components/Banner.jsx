@@ -8,8 +8,8 @@ import Typed from 'react-typed'
 const Banner = () => {
   return (
     <div className='text-white'>
-        <div className="my-custom h-5/6 lg:h-screen pb-10">
-            <div class="container w-full flex pt-10 lg:justify-start justify-center mx-auto">
+        <div className="my-custom h-6/6 lg:h-screen pb-10">
+            <div class="container w-full flex pt-10 lg:justify-start pt-32 lg:pt-16 justify-center mx-auto">
                 <div className='w-9/12 lg:w-5/12 px-3 pt-16'>
                   <div className='text-center lg:text-left '>
                     <h1 className='text-2xl lg:leading-relaxed font-semibold lg:text-5xl sm:2xl subpixel-antialiased'>The world's number one online trading platform.</h1>
